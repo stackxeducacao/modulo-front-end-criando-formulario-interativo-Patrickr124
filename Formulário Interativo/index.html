@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Interativo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon-16x16.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+
+    <!--Campo Para Informações Pessoais-->
+    <section>
+      <form>
+        <label for="nome">NOME*</label>
+
+        <input type="text" id="nome" name="nome" required /><br /><br />
+        <label for="sobrenome">SOBRENOME*</label>
+        <input
+          type="text"
+          id="sobrenome"
+          name="sobrenome"
+          required
+        /><br /><br />
+
+        <label for="email">E-MAIL*</label>
+
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="idade">IDADE*</label>
+        <input type="number" id="idade" name="idade" required /><br /><br />
+
+        <label for="telefone">TEL*</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="(xx) xxxxx-xxxx"
+          pattern="\(\d{2}\) \d{5}-\d{4}"
+          required
+        /><br /><br /><br />
+
+        <!--Botão de Enviar Formulário-->
+        <input class="botao" type="submit" value="ENVIAR" />
+      </form>
+    </section>
+  </body>
+</html>
